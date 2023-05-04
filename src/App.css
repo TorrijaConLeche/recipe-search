@@ -1,0 +1,91 @@
+header {
+    margin: auto;
+    width: 70%;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+
+}
+
+
+form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#title {
+    font-size: 50px;
+    text-shadow: 1px 8px black;
+    color: bisque;
+}
+
+#boton {
+    width: 10%;
+    background-color: rgb(223, 215, 215);
+    color: rgb(82, 82, 82);
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 8px;
+    margin-left: 10px;
+    border: none;
+    font-weight: 400;
+    font-size: 14px;
+    transition: 0.5s;
+}
+
+#boton:hover {
+    background-color: rgba(112, 112, 112, 0.305);
+    color: whitesmoke;
+}
+
+.recipebox {
+    margin-bottom: 30px;
+    padding: 1% 3% 3% 3%;
+    border: 1px solid rgb(40, 29, 15);
+    background-color: rgb(199, 172, 139);
+    border-radius: 0px 40px 40px 40px;
+    color: black;
+    box-shadow: 10px 9px rgb(237, 226, 168);
+}
+
+.recipegrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4px;
+    margin: auto;
+}
+
+ul {
+    padding: 0;
+    list-style-type: none;
+}
+
+
+li {
+    list-style: none;
+    margin: 0px;
+
+}
+
+input {
+    border: none;
+    margin: 2px;
+    width: 40%;
+    padding: 10px;
+    background-color: rgb(57, 86, 96);
+    color: white;
+    border-radius: 4px;
+    outline: none;
+}
+
+input::placeholder {
+    color: rgb(205, 205, 205);
+}
+
+.thumb {
+    width: 90%;
+    height: 100%;
+    border-radius: 8px;
+    box-shadow: 2px 2px 12px rgb(27, 19, 6);
+}
