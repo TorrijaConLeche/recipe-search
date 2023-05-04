@@ -1,5 +1,5 @@
 
-import withResults from './response.json'
+// import withResults from './response.json'
 import withoutResults from './no-results.json'
 import { useState } from 'react'
 
@@ -15,7 +15,7 @@ export function useRecipes({ search }) {
         category: recipe.strCategory,
         country: recipe.strArea,
         instructions: recipe.strInstructions,
-        youtube: strYoutube
+        youtube: recipe.strYoutube
     }))
 
     const getRecipes = () => {

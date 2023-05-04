@@ -7,6 +7,11 @@ header {
 
 }
 
+#ytlogo {
+    width: 10%;
+}
+
+
 
 form {
     display: flex;

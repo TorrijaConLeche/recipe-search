@@ -14,13 +14,25 @@ export function ListOfRecipes({ recipes }) {
       {
         recipes.map(recipe => (
           <div className='recipebox'>
-            <li key={recipe.id}>
+            <li className={recipe.id} key={recipe.id}>
               <h2>{recipe.meal}</h2>
               <h3>{recipe.country}</h3>
               <div className="recipegrid">
+                <div id='test'>
                 <img className='thumb' src={recipe.recipeimg} alt={recipe.strMeal} />
+                </div>
+                <div id="test2" >
+                <a href={recipe.youtube}>
+                  <img id='ytlogo' src='https://cdn-icons-png.flaticon.com/512/1384/1384012.png' alt="Youtube logo"/>
+                </a>
+                <h3>Watch on youtube</h3>
                 <p>{recipe.instructions}</p>
-                <p>{recipe.youtube}</p>
+                </div>
+
+               
+                
+                
+                
               </div>
             </li>
           </div>
