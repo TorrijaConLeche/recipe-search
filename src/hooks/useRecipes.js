@@ -15,7 +15,8 @@ export function useRecipes({ search }) {
         category: recipe.strCategory,
         country: recipe.strArea,
         instructions: recipe.strInstructions,
-        youtube: recipe.strYoutube
+        youtube: recipe.strYoutube,
+        tags: recipe.strTags
     }))
 
     const getRecipes = () => {

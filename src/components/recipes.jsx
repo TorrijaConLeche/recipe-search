@@ -15,19 +15,29 @@ export function ListOfRecipes({ recipes }) {
         recipes.map(recipe => (
           <div className='recipebox'>
             <li className={recipe.id} key={recipe.id}>
-              <h2>{recipe.meal}</h2>
-              <h3>{recipe.country}</h3>
-              <div className="recipegrid">
-                <div id='test'>
-                <img className='thumb' src={recipe.recipeimg} alt={recipe.strMeal} />
-                </div>
-                <div id="test2" >
-                <a href={recipe.youtube}>
-                  <img id='ytlogo' src='https://cdn-icons-png.flaticon.com/512/1384/1384012.png' alt="Youtube logo"/>
+              <h2 className="mealname">{recipe.meal}</h2>
+
+              <div className='mealinfo'>
+                <h3 className='mealcountry'>{recipe.country}</h3>
+                <h3 className='mealcountry'>{recipe.category}</h3>
+                <a id='ytlogo' href={recipe.youtube}>
+                  <img src='/youtube.png' alt="Youtube logo"/>
                 </a>
-                <h3>Watch on youtube</h3>
-                <p>{recipe.instructions}</p>
+              </div>
+              
+
+              <div className="recipegrid">
+
+                <div id='test'>
+                 <img className='thumb' src={recipe.recipeimg} alt={recipe.strMeal} />
                 </div>
+
+                <div id="test2" >
+                 
+                  <h3>Watch on youtube</h3>
+                  <p>{recipe.instructions}</p>
+                </div>
+
 
                
                 
@@ -47,7 +57,10 @@ export function ListOfRecipes({ recipes }) {
 export function NoRecipesResults() {
 
   return (
-    <p>Recipes not found</p>
+    <div className="norecipesfound">
+      <p >Recipes not found</p>
+    </div>
+    
   )
 }
 

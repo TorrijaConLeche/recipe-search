@@ -1,5 +1,6 @@
 header {
     margin: auto;
+    margin-bottom: 5%;
     width: 70%;
     align-items: center;
     text-align: center;
@@ -7,11 +8,10 @@ header {
 
 }
 
-#ytlogo {
-    width: 10%;
+.norecipesfound {
+    text-align: center;
+    color: rgb(255, 173, 67);
 }
-
-
 
 form {
     display: flex;
@@ -93,4 +93,36 @@ input::placeholder {
     height: 100%;
     border-radius: 8px;
     box-shadow: 2px 2px 12px rgb(27, 19, 6);
+}
+
+.mealname {
+    font-size: 40px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+.mealinfo {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 5px;
+}
+
+
+#ytlogo {
+    margin: 10px 0px 0px 0px;
+    align-items: center;
+    vertical-align: center;
+    padding: 10px;
+    width: 50px;
+}
+#ytlogo img{
+    width: 100%;
+    margin: 0px 0px 0px 0px;
+}
+
+.mealcountry{
+    background-color: rgb(237, 226, 168);
+    padding: 8px;
+    border-radius: 8px;
+    box-shadow: 4px 4px rgb(0, 0, 0);
 }
